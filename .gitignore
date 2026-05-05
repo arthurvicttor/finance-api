@@ -35,4 +35,5 @@ build/
 ### Sensitive files ###
 .env
 *.env
-application-local.yml
+application.yml
+application.properties

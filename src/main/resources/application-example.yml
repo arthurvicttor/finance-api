@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/finance_db
-    username: postgres
-    password: dev0410
+    username: ${DB_USERNAME:seu_usuario}
+    password: ${DB_PASSWORD:sua_senha}
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -22,8 +22,8 @@ server:
   port: 8080
 
 jwt:
-  secret: finance-api-secret-key-2024-very-long-string-for-security
-  expiration: 86400000 # 24 horas em milissegundos
+  secret: ${JWT_SECRET:seu_secret_aqui}
+  expiration: 86400000
 
 logging:
   level:
